@@ -1,7 +1,20 @@
-﻿@{
-    ViewData["Title"] = "About";
-}
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
+﻿@model IEnumerable<ContosoUniversity.Models.SchoolViewModels.EnrollmentDateGroup>
 
-<p>Use this area to provide additional information.</p>
+@{
+    ViewData["Title"] = "Student Body Statistics";
+}
+    <style>
+        img{
+            display:block;
+            margin:auto;
+        }
+    </style>
+    <h2 style="font-variant-caps:small-caps; text-align:center;">Bryce Andrews "President"</h2>
+
+    <p>
+        <img src="https://images.pexels.com/photos/25758/pexels-photo.jpg?h=350&auto=compress&cs=tinysrgb" alt="Contoso University Gate" width="400" height="500" />
+    </p>
+
+    <p style="text-align:center;">
+        Call me: (555)555-5555
+    </p>
