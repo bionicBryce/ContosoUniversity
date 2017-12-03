@@ -3,6 +3,36 @@
 @{
     ViewData["Title"] = "Student Body Statistics";
 }
+
+    
+    <h2 style="text-align:center;">Student Body Statistics</h2>
+
+    <table style="    margin: auto;
+    width: 20%;
+    padding: 10px;">
+        <tr>
+            <th>
+                Enrollment Date
+            </th>
+            <th>
+                Students
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EnrollmentDate)
+                </td>
+                <td>
+                    @item.StudentCount
+                </td>
+            </tr>
+        }
+    </table>
+    <br/>
+    <br/>
     <style>
         img{
             display:block;
@@ -16,5 +46,5 @@
     </p>
 
     <p style="text-align:center;">
-        Call me: (555)555-5555
+        Call me: (208)716-1279 &diams; email: and02027@byui.edu
     </p>
